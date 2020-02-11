@@ -2,12 +2,14 @@
 # what is that A even for, anyway?
 # tweets out what the A must obviously stand for
 
+import os
 import random
 import time
 
 import tweepy
 
-PATH = "/home/pi/Documents/Python/aisfor/"
+# Get path of executable file, rather than hard-coding
+PATH = os.path.dirname(os.path.realpath(__file__)) + '/'
 WORDS_NAME = "AWords.txt"
 WORDS_FILE = PATH + WORDS_NAME
 
